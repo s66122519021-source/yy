@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Zoo Visitor Data Service - Friend 4",
+    "description": "Request the local API backed by the Data.go.th CSV resource.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get visitor statistics",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": {
+          "raw": "{{baseUrl}}/api/zoo-visitors",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "zoo-visitors"]
+        }
+      }
+    }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://127.0.0.1:8004" }]
+}
